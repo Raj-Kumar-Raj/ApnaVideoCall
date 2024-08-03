@@ -1,0 +1,245 @@
+/* App.css */
+
+.landingPageContainer {
+    width: 100vw;
+    height: 100vh;
+    background: url("/background.png") no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navHeader {
+    flex: 1;
+}
+
+.navHeader h2 {
+    margin: 0;
+}
+
+.navlist {
+    display: flex;
+    gap: 20px;
+    margin-left: auto; /* Pushes the navlist to the right */
+}
+
+.navlist p, .navlist div {
+    cursor: pointer;
+    margin: 0;
+    font-size: 16px;
+    color: white; /* Ensure text is visible */
+}
+
+.navlist div {
+    display: flex;
+    align-items: center;
+}
+
+
+/* App.css */
+
+/* General styles for body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f4f7; /* Light background color for the page */
+  }
+  
+  /* Navbar styles */
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FF6F00; /* Orange color for the navbar */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .navBar h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  /* Navbar right section styles */
+  .navBar .navRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navBar .navRight p {
+    margin: 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: white; /* Ensure 'History' text is visible */
+  }
+  
+  .navBar .navRight .MuiButton-root {
+    color: #FF6F00; /* Text color of the button */
+    background-color: #ffffff; /* Background color of the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 6px 12px; /* Padding for better click area */
+    text-transform: none; /* Prevent uppercase transformation */
+    font-weight: bold; /* Make text bold */
+  }
+  
+  .navBar .navRight .MuiButton-root:hover {
+    background-color: #FFE0B2; /* Light orange background on hover */
+  }
+  
+  /* Meet container styles */
+  .meetContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(100vh - 56px);
+    align-items: center;
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .leftPanel, .rightPanel {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .leftPanel h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .leftPanel .MuiTextField-root {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .leftPanel .MuiButton-root {
+    margin-top: 10px;
+  }
+  
+  .rightPanel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .meetContainer {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .leftPanel, .rightPanel {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .leftPanel .MuiTextField-root {
+      width: 100%;
+    }
+  
+    .leftPanel .MuiButton-root {
+      width: 100%;
+    }
+  }
+  
+
+.landingMainContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+
+.landingMainContainer > div:nth-child(1) {
+    max-width: 50%;
+}
+
+.landingMainContainer > div:nth-child(1) h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.landingMainContainer > div:nth-child(1) h1 span {
+    color: #FF9839;
+}
+
+.landingMainContainer > div:nth-child(1) p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button'] {
+    background: #D97500;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.landingMainContainer > div:nth-child(1) div[role='button']:hover {
+    background: #FF9839;
+}
+
+.landingMainContainer > div:nth-child(1) a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.landingMainContainer > div:nth-child(2) img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .landingMainContainer {
+        flex-direction: column;
+    }
+
+    .landingMainContainer > div:nth-child(1) {
+        max-width: 100%;
+    }
+
+    .landingMainContainer > div:nth-child(1) h1 {
+        font-size: 2rem;
+    }
+
+    .landingMainContainer > div:nth-child(1) p {
+        font-size: 1.2rem;
+    }
+
+    .landingMainContainer > div:nth-child(1) div[role='button'] {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .landingMainContainer > div:nth-child(2) img {
+        height: auto;
+        width: 100%;
+    }
+}
