@@ -10,7 +10,7 @@ export default function LandingPage() {
         <div className='landingPageContainer'>
             <nav>
                 <div className='navHeader'>
-                    <h2>Apna Video Call</h2>
+                    <h2>CallSphere</h2>
                 </div>
                 <div className='navlist'>
                     <p onClick={() => {
