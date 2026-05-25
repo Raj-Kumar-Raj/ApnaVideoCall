@@ -26,7 +26,7 @@ function HomeComponent() {
 
                 <div style={{ display: "flex", alignItems: "center" }}>
 
-                    <h2>Call Sphere</h2>
+                    <h2>CallSphere</h2>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center" }}>
